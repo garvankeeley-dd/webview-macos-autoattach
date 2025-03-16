@@ -11,6 +11,8 @@
 		6E0DF5FF2D862C8F0092FCCC /* OrderSessionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0DF5FE2D862C8F0092FCCC /* OrderSessionAPI.swift */; };
 		6E0DF6012D865F770092FCCC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0DF6002D865F770092FCCC /* Config.swift */; };
 		6E0DF6032D8673050092FCCC /* JwtAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0DF6022D8673050092FCCC /* JwtAPI.swift */; };
+		6E0DF6082D8687F80092FCCC /* ViewController+WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0DF6072D8687F80092FCCC /* ViewController+WebView.swift */; };
+		6E0DF60A2D8689170092FCCC /* ReadCookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0DF6092D8689170092FCCC /* ReadCookies.swift */; };
 		A89DE0F1292525B2005FAEB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89DE0F0292525B2005FAEB7 /* AppDelegate.swift */; };
 		A89DE0F3292525B2005FAEB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89DE0F2292525B2005FAEB7 /* ViewController.swift */; };
 		A89DE0F5292525B4005FAEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89DE0F4292525B4005FAEB7 /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		6E0DF5FE2D862C8F0092FCCC /* OrderSessionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSessionAPI.swift; sourceTree = "<group>"; };
 		6E0DF6002D865F770092FCCC /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		6E0DF6022D8673050092FCCC /* JwtAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JwtAPI.swift; sourceTree = "<group>"; };
+		6E0DF6072D8687F80092FCCC /* ViewController+WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+WebView.swift"; sourceTree = "<group>"; };
+		6E0DF6092D8689170092FCCC /* ReadCookies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCookies.swift; sourceTree = "<group>"; };
 		A89DE0ED292525B2005FAEB7 /* macos-app-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-app-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89DE0F0292525B2005FAEB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A89DE0F2292525B2005FAEB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			children = (
 				EBA741892D85DD340097A5D6 /* URLRequest+Cookies.swift */,
 				EBA7418B2D85EF120097A5D6 /* SafariAttacher.swift */,
+				6E0DF6092D8689170092FCCC /* ReadCookies.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA741852D85D46E0097A5D6 /* StartPage.swift */,
+				6E0DF6072D8687F80092FCCC /* ViewController+WebView.swift */,
 				EBA741872D85DA010097A5D6 /* NavigationDelegate.swift */,
 				6E0DF5FC2D86216F0092FCCC /* ScriptHandler.swift */,
 			);
@@ -288,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E0DF5FD2D86216F0092FCCC /* ScriptHandler.swift in Sources */,
+				6E0DF60A2D8689170092FCCC /* ReadCookies.swift in Sources */,
 				EBA741862D85D46F0097A5D6 /* StartPage.swift in Sources */,
 				6E0DF5FF2D862C8F0092FCCC /* OrderSessionAPI.swift in Sources */,
 				EBA7418A2D85DD430097A5D6 /* URLRequest+Cookies.swift in Sources */,
@@ -296,6 +303,7 @@
 				6E0DF6032D8673050092FCCC /* JwtAPI.swift in Sources */,
 				A89DE0F1292525B2005FAEB7 /* AppDelegate.swift in Sources */,
 				6E0DF6012D865F770092FCCC /* Config.swift in Sources */,
+				6E0DF6082D8687F80092FCCC /* ViewController+WebView.swift in Sources */,
 				EBA7418C2D85EF160097A5D6 /* SafariAttacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
