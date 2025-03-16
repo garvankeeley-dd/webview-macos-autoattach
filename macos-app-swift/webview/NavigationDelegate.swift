@@ -25,7 +25,7 @@ extension ViewController: WKNavigationDelegate {
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         //print("Web view finished loading.")
 
-        Attacher.exec()
+        SafariAttacher.exec()
     }
 
     // Called when an error occurs during web content loading after navigation has started.
