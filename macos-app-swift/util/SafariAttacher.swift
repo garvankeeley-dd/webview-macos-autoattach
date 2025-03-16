@@ -1,13 +1,14 @@
 import Foundation
 
-struct Attacher {
+/// Automatically attaches Safari debugger
+struct SafariAttacher {
     static var runOnce = false
     static func exec() {
         if runOnce { return }
         runOnce = true
 
         var error: NSDictionary?
-        let scriptObject = NSAppleScript(source: Attacher.script)!
+        let scriptObject = NSAppleScript(source: SafariAttacher.script)!
         let output: NSAppleEventDescriptor = scriptObject.executeAndReturnError(&error)
         print("\(error ?? output)")
     }

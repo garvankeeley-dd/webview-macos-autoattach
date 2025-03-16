@@ -19,7 +19,7 @@
 		EBA741862D85D46F0097A5D6 /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA741852D85D46E0097A5D6 /* StartPage.swift */; };
 		EBA741882D85DA010097A5D6 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA741872D85DA010097A5D6 /* NavigationDelegate.swift */; };
 		EBA7418A2D85DD430097A5D6 /* URLRequest+Cookies.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA741892D85DD340097A5D6 /* URLRequest+Cookies.swift */; };
-		EBA7418C2D85EF160097A5D6 /* Applescript.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7418B2D85EF120097A5D6 /* Applescript.swift */; };
+		EBA7418C2D85EF160097A5D6 /* SafariAttacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA7418B2D85EF120097A5D6 /* SafariAttacher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		EBA741852D85D46E0097A5D6 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
 		EBA741872D85DA010097A5D6 /* NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		EBA741892D85DD340097A5D6 /* URLRequest+Cookies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Cookies.swift"; sourceTree = "<group>"; };
-		EBA7418B2D85EF120097A5D6 /* Applescript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Applescript.swift; sourceTree = "<group>"; };
+		EBA7418B2D85EF120097A5D6 /* SafariAttacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAttacher.swift; sourceTree = "<group>"; };
 		EBA7418D2D85F2E40097A5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +85,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E0DF6042D8684BA0092FCCC /* webAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6E0DF6022D8673050092FCCC /* JwtAPI.swift */,
+				6E0DF5FE2D862C8F0092FCCC /* OrderSessionAPI.swift */,
+			);
+			path = webAPI;
+			sourceTree = "<group>";
+		};
+		6E0DF6052D8684DC0092FCCC /* util */ = {
+			isa = PBXGroup;
+			children = (
+				EBA741892D85DD340097A5D6 /* URLRequest+Cookies.swift */,
+				EBA7418B2D85EF120097A5D6 /* SafariAttacher.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		6E0DF6062D8684FE0092FCCC /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				EBA741852D85D46E0097A5D6 /* StartPage.swift */,
+				EBA741872D85DA010097A5D6 /* NavigationDelegate.swift */,
+				6E0DF5FC2D86216F0092FCCC /* ScriptHandler.swift */,
+			);
+			path = webview;
+			sourceTree = "<group>";
+		};
 		A89DE0E4292525B2005FAEB7 = {
 			isa = PBXGroup;
 			children = (
@@ -108,16 +136,12 @@
 			isa = PBXGroup;
 			children = (
 				EBA7418D2D85F2E40097A5D6 /* Info.plist */,
-				EBA741892D85DD340097A5D6 /* URLRequest+Cookies.swift */,
 				A89DE0F0292525B2005FAEB7 /* AppDelegate.swift */,
-				A89DE0F2292525B2005FAEB7 /* ViewController.swift */,
-				6E0DF6022D8673050092FCCC /* JwtAPI.swift */,
 				6E0DF6002D865F770092FCCC /* Config.swift */,
-				6E0DF5FE2D862C8F0092FCCC /* OrderSessionAPI.swift */,
-				6E0DF5FC2D86216F0092FCCC /* ScriptHandler.swift */,
-				EBA741872D85DA010097A5D6 /* NavigationDelegate.swift */,
-				EBA7418B2D85EF120097A5D6 /* Applescript.swift */,
-				EBA741852D85D46E0097A5D6 /* StartPage.swift */,
+				A89DE0F2292525B2005FAEB7 /* ViewController.swift */,
+				6E0DF6042D8684BA0092FCCC /* webAPI */,
+				6E0DF6062D8684FE0092FCCC /* webview */,
+				6E0DF6052D8684DC0092FCCC /* util */,
 				A89DE0F4292525B4005FAEB7 /* Assets.xcassets */,
 				A89DE0F6292525B4005FAEB7 /* Main.storyboard */,
 				A89DE0F9292525B4005FAEB7 /* macos_app_swift.entitlements */,
@@ -272,7 +296,7 @@
 				6E0DF6032D8673050092FCCC /* JwtAPI.swift in Sources */,
 				A89DE0F1292525B2005FAEB7 /* AppDelegate.swift in Sources */,
 				6E0DF6012D865F770092FCCC /* Config.swift in Sources */,
-				EBA7418C2D85EF160097A5D6 /* Applescript.swift in Sources */,
+				EBA7418C2D85EF160097A5D6 /* SafariAttacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
