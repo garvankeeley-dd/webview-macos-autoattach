@@ -14,7 +14,7 @@ struct OrderSessionAPI {
         //request.setValue("AfroEatz/0 CFNetwork/1568.200.51 Darwin/24.3.0", forHTTPHeaderField: "User-Agent")
         request.setValue("Bearer \(Globals.jwt)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let requestBody = afroEatzCart
+        let requestBody = currentCart
         request.httpBody = requestBody.data(using: .utf8)
         
         do {

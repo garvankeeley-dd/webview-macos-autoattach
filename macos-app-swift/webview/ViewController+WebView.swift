@@ -1,7 +1,7 @@
 import WebKit
 
 struct Globals {
-    static let store = WKWebsiteDataStore.nonPersistent()
+    static let store = WKWebsiteDataStore.default()
     static var sessionId = ""
     static var orderSessionId = ""
     static var ddweb_token = ""
@@ -41,7 +41,7 @@ extension ViewController {
 // MARK: - Load Web Pages
 extension ViewController {
     func loadSigninPage() {
-        let url = URL(string: URLs.signin)!
+        let url = URL(string: isLoyaltyless ? URLs.signinLoyaltyless : URLs.signinLoyalty)!
         let myRequest = createURLRequest(with: url,
                                          cookies: [ ("native_mobile_integration_id", native_mobile_integration_id),
                                                     ("dd_device_id", dd_device_id),

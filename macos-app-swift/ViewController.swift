@@ -1,6 +1,21 @@
 import WebKit
 import Cocoa
 
+/**
+ 
+ curl 'https://identity.spendgo.com/oauth2/v3/auth?scope=user_profile&redirect_uri=https%3A%2F%2Forder.online%2Fonline-ordering%2Fmobile_auth_callback%2F&response_type=code&client_id=3natives_oauth_doordash_sf&state=c8559b45-a9a1-4c69-9c7b-a17b81549db8' \
+ -H 'Host: identity.spendgo.com' \
+ -H 'Sec-Fetch-Site: none' \
+ -H 'Connection: keep-alive' \
+ -H 'Sec-Fetch-Mode: navigate' \
+ -H 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 iOSStorefrontMobileApp' \
+ -H 'Accept-Language: en-CA,en-US;q=0.9,en;q=0.8' \
+ -H 'Sec-Fetch-Dest: document'
+ 
+ */
+
+let clientId = "3natives_oauth_doordash_sf"
+
 class ViewController: NSViewController {
     var webView: WKWebView!
     var backButton = NSButton()
@@ -8,7 +23,12 @@ class ViewController: NSViewController {
 
     enum URLs {
         static var precheckout: String { "https://order.online/precheckout/\(Globals.orderSessionId)?storeId=\(businessId)&code=\(Globals.sessionId)" }
-        static let signin = "https://order.online/bz-\(businessId)/login"
+        
+        static let signinLoyaltyless = "https://order.online/bz-\(businessId)/login"
+        
+        static var signinLoyalty: String {
+            "https://identity.spendgo.com/oauth2/v3/auth?scope=user_profile&redirect_uri=https%3A%2F%2Forder.online%2Fonline-ordering%2Fmobile_auth_callback%2F&response_type=code&client_id=\(clientId)&state=c8559b45-a9a1-4c69-9c7b-a17b81549db8"
+        }
     }
     
     override func loadView() {
