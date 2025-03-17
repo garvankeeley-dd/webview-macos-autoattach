@@ -1,6 +1,5 @@
-## WKWebView MacOS App
-
-- A MacOS app that is minimal standalone WKWebView sample.
+## Storefront Mobile: Standalone WKWebView MacOS App
+A minimalistic MacOS app that is an embedded web view for sign-in and checkout flows.
 - It automatically attaches Safari debugger (you need to grant permission on first run)
 - Follow each step in order to get to the checkout page.
 - Config.swift is where the store is setup.
