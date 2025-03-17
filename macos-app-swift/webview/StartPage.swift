@@ -58,8 +58,8 @@ struct StartPage {
                 <h3>ddweb_token: \(Globals.ddweb_token.isEmpty ? "unset" : Globals.ddweb_token.prefix(10)) </h3>
                 <h3>ddweb_session_id: \(Globals.ddweb_session_id.isEmpty ? "unset" : Globals.ddweb_session_id.prefix(10)) </h3>
     
-                <h3>Loyalty Session ID: \(Globals.sessionId.isEmpty ? "unset" : Globals.sessionId) </h3>
-                <h3>Order Session ID: \(Globals.orderSessionId.isEmpty ? "unset" : Globals.orderSessionId) </h3>
+                <h3>Loyalty Session ID: \(Globals.sessionId.isEmpty ? "unset" : Globals.sessionId.prefix(10)) </h3>
+                <h3>Order Session ID: \(Globals.orderSessionId.isEmpty ? "unset" : Globals.orderSessionId.prefix(10)) </h3>
                 <h1>fetch JWT
                 <button onclick="fetchJwtButton()">Go</button></h1>
                 <h1>signin page
