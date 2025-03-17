@@ -5,5 +5,21 @@ let native_mobile_integration_type = "BUSINESS"
 let app_oauth_state = "cf119f8b-10f4-4801-9b0a-6ca12d78520e"
 
 let afroEatzCart = """
-        {"fulfillment_type":"pickup","items":[{"extras":[{"quantity":1,"id":"9291367473","options":[{"extras":[],"quantity":1,"id":"42350242155","price":{"currency":"USD","value":375}}],"price":{"value":0,"currency":"USD"}}],"quantity":1,"id":"23517412998","special_instructions":"","price":{"value":900,"currency":"USD"}}],"store_id":"25654026","menu_id":"55466946"}
+        {
+          "items": [
+            {
+              "quantity": 1,
+              "extras": [],
+              "special_instructions": "",
+              "price": {
+                "value": 275,
+                "currency": "USD"
+              },
+              "id": "23502412087"
+            }
+          ],
+          "store_id": "25654026",
+          "fulfillment_type": "pickup",
+          "menu_id": "55466946"
+        }
 """
